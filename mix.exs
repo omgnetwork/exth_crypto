@@ -35,7 +35,7 @@ defmodule ExthCrypto.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:libsecp256k1, "~> 0.1.9"},
+      {:libsecp256k1, github: "omisego/libsecp256k1", branch: "elixir-only"},
       {:keccakf1600, "~> 2.0.0", hex: :keccakf1600_orig},
       {:credo, "~> 0.8", only: [:dev, :test], runtime: false},
       {:ex_doc, "~> 0.17", only: :dev, runtime: false},
